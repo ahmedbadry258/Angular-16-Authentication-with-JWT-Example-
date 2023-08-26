@@ -1,0 +1,52 @@
+<section class="h-100 h-custom" >
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+
+            <form class="px-md-2" ngForm="userForm" (ngSubmit)="onSubmit()" >
+
+              <div class="form-outline mb-4">
+                <input type="text" id="usernameId" class="form-control" name="username" [(ngModel)]="user.username"/>
+                <label class="form-label" for="usernameId">Username </label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="text" id="emailId" class="form-control" name="email" [(ngModel)]="user.email"/>
+                <label class="form-label" for="emailId">Email </label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="password" id="passwordId" class="form-control" name="password" [(ngModel)]="user.password"/>
+                <label class="form-label" for="passwordId">Password </label>
+              </div>
+
+
+<!--
+              <div class="mb-4">
+
+                <select class="select">
+                  <option value="1" disabled>Class</option>
+                  <option value="2">Class 1</option>
+                  <option value="3">Class 2</option>
+                  <option value="4">Class 3</option>
+                </select>
+
+              </div> -->
+
+
+
+              <button type="submit" class="btn btn-success btn-lg mb-1"  >Submit</button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div>
+
+</div>
